@@ -1,9 +1,17 @@
 import { Injectable } from '@nestjs/common';
 import { CreateFeatureDto, PrioritizeFeatureDto } from './dto/create-feature.dto';
+import { OpenAI } from 'openai';
 import { features } from 'process';
 
 @Injectable()
 export class FeatureService {
+  private readonly openai: OpenAI;
+  constructor() {
+    this.openai = new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY,
+    });
+  }
+
   async rankFeatures(request: PrioritizeFeatureDto) {
     const { productVision, goal, featureIdeas } = request;
     const rankedFeatures = featureIdeas.map((feature, index) => ({
