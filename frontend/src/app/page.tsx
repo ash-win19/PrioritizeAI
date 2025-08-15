@@ -2,21 +2,21 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-[#FAFAFA]">
       {/* Navigation */}
       <nav className="px-6 py-4 flex justify-between items-center max-w-7xl mx-auto">
         <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+          <div className="w-8 h-8 bg-gradient-to-r from-[#7C3AED] to-[#06B6D4] rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-lg">P</span>
           </div>
           <span className="text-xl font-bold text-gray-900">PrioritizeAI</span>
         </div>
         <div className="hidden md:flex space-x-8">
-          <a href="#features" className="text-gray-600 hover:text-blue-600 transition-colors">Features</a>
-          <a href="#how-it-works" className="text-gray-600 hover:text-blue-600 transition-colors">How it Works</a>
-          <a href="#pricing" className="text-gray-600 hover:text-blue-600 transition-colors">Pricing</a>
+          <a href="#features" className="text-gray-600 hover:text-[#7C3AED] transition-colors">Features</a>
+          <a href="#how-it-works" className="text-gray-600 hover:text-[#7C3AED] transition-colors">How it Works</a>
+          <a href="#pricing" className="text-gray-600 hover:text-[#7C3AED] transition-colors">Pricing</a>
         </div>
-        <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+        <button className="bg-gradient-to-r from-[#7C3AED] to-[#06B6D4] text-white px-6 py-2 rounded-lg hover:from-[#6D28D9] hover:to-[#0891B2] transition-all duration-300 shadow-lg">
           Get Started
         </button>
       </nav>
@@ -25,16 +25,16 @@ export default function Home() {
       <section className="px-6 py-20 text-center max-w-4xl mx-auto">
         <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
           Prioritize Your Product Features with
-          <span className="text-blue-600"> AI Intelligence</span>
+          <span className="bg-gradient-to-r from-[#7C3AED] to-[#06B6D4] bg-clip-text text-transparent"> AI Intelligence</span>
         </h1>
         <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
           Stop guessing which features to build first. Our AI-powered platform analyzes your product vision and ranks features by impact, helping you build the right MVP faster.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors">
+          <button className="bg-gradient-to-r from-[#7C3AED] to-[#06B6D4] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-[#6D28D9] hover:to-[#0891B2] transition-all duration-300 shadow-lg">
             Start Prioritizing
           </button>
-          <button className="border border-gray-300 text-gray-700 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-50 transition-colors">
+          <button className="border-2 border-[#7C3AED] text-[#7C3AED] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#7C3AED] hover:text-white transition-all duration-300">
             Watch Demo
           </button>
         </div>
@@ -45,7 +45,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Why Choose PrioritizeAI?
+              Why Choose <span className="bg-gradient-to-r from-[#7C3AED] to-[#06B6D4] bg-clip-text text-transparent">PrioritizeAI</span>?
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Built for product teams who want to make data-driven decisions about their roadmap
@@ -53,9 +53,9 @@ export default function Home() {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-6">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="text-center p-6 rounded-xl hover:shadow-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-gradient-to-r from-[#7C3AED] to-[#06B6D4] rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
               </div>
@@ -65,9 +65,9 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="text-center p-6">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="text-center p-6 rounded-xl hover:shadow-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-gradient-to-r from-[#06B6D4] to-[#7C3AED] rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
@@ -77,9 +77,9 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="text-center p-6">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="text-center p-6 rounded-xl hover:shadow-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-gradient-to-r from-[#7C3AED] to-[#06B6D4] rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               </div>
@@ -93,7 +93,7 @@ export default function Home() {
       </section>
 
       {/* How It Works Section */}
-      <section id="how-it-works" className="px-6 py-20 bg-gray-50">
+      <section id="how-it-works" className="px-6 py-20 bg-[#FAFAFA]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -106,7 +106,7 @@ export default function Home() {
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+              <div className="w-12 h-12 bg-gradient-to-r from-[#7C3AED] to-[#06B6D4] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold shadow-lg">
                 1
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Share Your Vision</h3>
@@ -116,7 +116,7 @@ export default function Home() {
             </div>
             
             <div className="text-center">
-              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+              <div className="w-12 h-12 bg-gradient-to-r from-[#06B6D4] to-[#7C3AED] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold shadow-lg">
                 2
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">AI Analysis</h3>
@@ -126,7 +126,7 @@ export default function Home() {
             </div>
             
             <div className="text-center">
-              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+              <div className="w-12 h-12 bg-gradient-to-r from-[#7C3AED] to-[#06B6D4] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold shadow-lg">
                 3
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Get Your Roadmap</h3>
@@ -146,17 +146,19 @@ export default function Home() {
               See It In Action
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Watch how PrioritizeAI transforms your product vision into a prioritized roadmap
+              Watch how <span className="bg-gradient-to-r from-[#7C3AED] to-[#06B6D4] bg-clip-text text-transparent">PrioritizeAI</span> transforms your product vision into a prioritized roadmap
             </p>
           </div>
           
-          <div className="bg-gray-100 rounded-lg p-8 max-w-4xl mx-auto">
-            <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
+          <div className="bg-gradient-to-r from-[#7C3AED]/10 to-[#06B6D4]/10 rounded-lg p-8 max-w-4xl mx-auto border border-[#7C3AED]/20">
+            <div className="aspect-video bg-gradient-to-r from-[#7C3AED]/5 to-[#06B6D4]/5 rounded-lg flex items-center justify-center border-2 border-dashed border-[#7C3AED]/30">
               <div className="text-center">
-                <svg className="w-16 h-16 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p className="text-gray-600">Demo video coming soon</p>
+                <div className="w-16 h-16 bg-gradient-to-r from-[#7C3AED] to-[#06B6D4] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <p className="text-gray-600 font-medium">Demo video coming soon</p>
               </div>
             </div>
           </div>
@@ -164,15 +166,15 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="px-6 py-20 bg-blue-600">
+      <section className="px-6 py-20 bg-gradient-to-r from-[#7C3AED] to-[#06B6D4]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-4">
             Ready to Build the Right Features?
           </h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-white/90 mb-8">
             Join hundreds of product teams who are already using PrioritizeAI to make better decisions.
           </p>
-          <button className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
+          <button className="bg-white text-[#7C3AED] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg">
             Start Your Free Analysis
           </button>
         </div>
@@ -184,7 +186,7 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-gradient-to-r from-[#7C3AED] to-[#06B6D4] rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold text-lg">P</span>
                 </div>
                 <span className="text-xl font-bold">PrioritizeAI</span>
@@ -197,27 +199,27 @@ export default function Home() {
             <div>
               <h4 className="font-semibold mb-4">Product</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Features</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Pricing</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">API</a></li>
+                <li><a href="#" className="hover:text-[#06B6D4] transition-colors">Features</a></li>
+                <li><a href="#" className="hover:text-[#06B6D4] transition-colors">Pricing</a></li>
+                <li><a href="#" className="hover:text-[#06B6D4] transition-colors">API</a></li>
               </ul>
             </div>
             
             <div>
               <h4 className="font-semibold mb-4">Company</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">About</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
+                <li><a href="#" className="hover:text-[#06B6D4] transition-colors">About</a></li>
+                <li><a href="#" className="hover:text-[#06B6D4] transition-colors">Blog</a></li>
+                <li><a href="#" className="hover:text-[#06B6D4] transition-colors">Contact</a></li>
               </ul>
             </div>
             
             <div>
               <h4 className="font-semibold mb-4">Support</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Documentation</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Status</a></li>
+                <li><a href="#" className="hover:text-[#06B6D4] transition-colors">Help Center</a></li>
+                <li><a href="#" className="hover:text-[#06B6D4] transition-colors">Documentation</a></li>
+                <li><a href="#" className="hover:text-[#06B6D4] transition-colors">Status</a></li>
               </ul>
             </div>
           </div>
